@@ -9,18 +9,19 @@ function AddTodo(event) {
 
     event.preventDefault();
     const Todo = document.createElement('div');
+    Todo.classList.add('todo');
 
     const todoText = document.createElement('li');
     todoText.innerText = 'Hello';
     Todo.append(todoText);
-
+    // Add Check Button
     const todoChecked = document.createElement('button');
-    todoChecked.innerHTML = 'None'; 
+    todoChecked.innerHTML = '<i class="fas fa-check"></i>'; 
     todoChecked.classList.add('todo-checked');
     Todo.appendChild(todoChecked);
-
+    // Add Delete Button
     const todoDelete = document.createElement('button');
-    todoDelete.innerHTML = 'None';
+    todoDelete.innerHTML = '<i class="fas fa-trash"></i>';
     todoDelete.classList.add('todo-delete');
     Todo.appendChild(todoDelete);
 

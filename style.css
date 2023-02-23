@@ -10,7 +10,16 @@
 body {
     text-align: center;
     background-image: linear-gradient(90deg, rgb(80, 187, 213), rgb(208, 65, 221));
-}   
+}
+
+ul {
+    list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+    color:blueviolet;
+}
 
 .todo-heading {
     font-size: 3rem;
@@ -20,13 +29,12 @@ body {
 .todo-add {
     display: flex;
     justify-content: center;
-    gap: .2rem;
 }
 
 .todo-input {
     height: 1.7rem;
     width: 15rem;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     border: 1px solid  gray;
 }
 
@@ -35,12 +43,32 @@ body {
     font-weight:900;
     height: 1.7rem;
     width: 2rem;
-    border-radius: 10px;
+    border-radius:0 10px 10px 0;
     border: 1px solid  gray;
-    color: aliceblue;
-    background-color: black;
 }
 
-.todo-button:hover {
-    cursor: pointer;
+
+.todo-container {
+    margin-top: 2rem;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .7rem;
+    gap: .7rem;
+}
+
+.todo li {
+    width: 15rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.todo button {
+    font-size: .9rem;
+    background-color: transparent;
+    border: none;
+
 }
