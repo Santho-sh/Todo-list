@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
@@ -77,7 +76,6 @@ button:hover {
     font-size: 0.9rem;
     background-color: transparent;
     border: none;
-
 }
 
 .fa-trash,
