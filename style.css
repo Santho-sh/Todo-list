@@ -30,7 +30,8 @@ button:hover {
     margin: 2.5rem;
 }
 
-.todo-add {
+.todo-add div:first-child{
+
     display: flex;
     justify-content: center;
 }
@@ -93,3 +94,11 @@ button:hover {
     transform: translateY(5rem) rotateZ(20deg);
     opacity: 0;
 }
+
+.todo-filter{
+    height: 1.7rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+}
+
